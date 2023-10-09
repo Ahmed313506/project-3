@@ -47,18 +47,20 @@ document.querySelectorAll(".thirdlist h3").forEach(function(element) {
     //     $(this).removeClass("text");
     // });
 
-    document.querySelectorAll(".secondlist h3").forEach(function(element) {
-        element.addEventListener("mouseover", function() {
-            this.style.color="orange";
-            this.classList.add("text");
-        });
-    });
-    document.querySelectorAll(".secondlist h3").forEach(function(element) {
-        element.addEventListener("mouseout", function() {
-            this.style.color="black";
-            this.classList.remove("text");
-        });
-    });
+    // document.querySelectorAll(".secondlist h3").forEach(function(element) {
+    //     element.addEventListener("mouseover", function() {
+    //         this.style.color="orange";
+    //         this.classList.add("text");
+    //     });
+    // });
+    // document.querySelectorAll(".secondlist h3").forEach(function(element) {
+    //     element.addEventListener("mouseout", function() {
+    //         this.style.color="black";
+    //         this.classList.remove("text");
+    //     });
+    // });
+    
+
     
     // $(".png6").mouseover(function () { 
     //     // var categories = ['Wirtschaft','Wissenschaft','Politik','Leben','Kultur','Geschichte']
@@ -73,3 +75,25 @@ document.querySelectorAll(".thirdlist h3").forEach(function(element) {
     // });
   
     
+
+   $(".secondlist h3").on("mouseover", function() {
+    $(this).css("color", "orange");
+    $(this).addClass("text");
+});
+
+
+$(".secondlist h3").on("mouseout", function() {
+    $(this).css("color", "black");
+    $(this).removeClass("text");
+});
+
+$(".flex1").on("mouseover", function() {
+    $(this).css("color", "orange");
+    $(this).addClass("text");
+});
+
+
+$(".flex1").on("mouseout", function() {
+    $(this).css("color", "black");
+    $(this).removeClass("text");
+});
