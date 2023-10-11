@@ -13,7 +13,7 @@ body{
 }
 
 .Name{
-    width: 50%;
+    width: ma;
     height: 100%;
     font-size: 200%;
     font-weight: bolder;
@@ -204,14 +204,57 @@ p{
 @media  (max-width: 1024px) {
     .container1{ 
         flex-wrap: wrap;
-  
-    
-       
- 
-    
+     
     }
+    .flex2{
+        flex-shrink: 1;
+       }
 
 }
+
+@media  (min-width: 1025px) {
+    body{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    body>*{ 
+flex-grow: 1;
+    }
+    .container1{
+        justify-content: center;
+    }
+  
+}
+@media  (max-width: 900px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .buttons{
+        width: 100%;
+    }
+    .Name{
+        margin-bottom: 100px;
+        flex-shrink: 0px;
+        
+    }
+    .container1{
+        margin-top: 150px;
+       
+        
+    }
+   .container1>*{
+    justify-content: center;
+   }
+
+}
+
 
 
 
