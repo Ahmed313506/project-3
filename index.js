@@ -97,3 +97,21 @@ $(".flex1").on("mouseout", function() {
     $(this).css("color", "black");
     $(this).removeClass("text");
 });
+
+// const returnHomeButton = document.querySelector(".Name2");
+
+document.querySelector(".Name").addEventListener("click", function () {
+    location.reload();
+ 
+});
+
+
+// document.querySelector(".Name").addEventListener("mouseover", function () {
+//     // location.reload();
+//     this.style.backgroundColor="whitesmoke";
+// });
+
+// document.querySelector(".Name").addEventListener("mouseout", function () {
+//     this.style.backgroundColor="white";
+// });
+
