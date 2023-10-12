@@ -115,3 +115,49 @@ document.querySelector(".Name").addEventListener("click", function () {
 //     this.style.backgroundColor="white";
 // });
 
+const dropdowns= document.querySelectorAll('.dropdown');
+
+dropdowns.forEach(dropdown => {
+    const select = dropdown.querySelector('.select');
+    const caret = dropdown.querySelector('.caret');
+    const menu2 = dropdown.querySelector('.menu2');
+    const options = dropdown.querySelectorAll('.menu2 li');
+    const selected = dropdown.querySelector('.selected');
+
+    // Add event listeners or perform actions with the selected elements
+    select.addEventListener('mouseover', () => {
+        // Perform an action when the se lect element is clicked.
+        select.classList.add('select-clicked');
+        caret.classList.add('caret-rotate');
+        menu2.classList.add('menu2-open');
+
+    });
+
+   
+
+
+
+
+    // Add event listeners or perform actions with other elements if needed.
+    options.forEach(option => {
+        option.addEventListener('click', () => {
+            // selected.innerText = option.innerText;
+            select.classList.remove('select-clicked');
+            caret.classList.remove('caret-rotate');
+            menu2.classList.remove('menu2-open');
+            
+            // Inside this block, you want to remove the 'active' class from other options, so it should be here
+            options.forEach(option => {
+                option.classList.remove('active');
+            });
+         
+        });
+        option.classList.add('active');
+        $(document).click(function () { 
+            $('.select').removeClass('select-clicked');
+            $('.caret').removeClass('caret-rotate');
+            $('.menu2').removeClass('menu2-open');
+        });
+    });
+});
+
