@@ -249,10 +249,7 @@ p{
         
     }
     
-    /* .select-clicked{
-        border: 2px #26489a solid;
-        box-shadow: 0 0 0.8em #26489a; 
-    } */
+ 
     
     .select:hover{
         background: whitesmoke;
@@ -275,15 +272,8 @@ p{
     
     .menu2{
         list-style: none;
-        /* padding: 0,2em 0,5em; */
-
-        /* border: 1px #363a43 solid; */
         box-shadow: 16px 16px 16px 0px rgba(0, 0, 0, 0.1);
-        /* border-radius: 10px; */
         background-color: white;
-      
-        /* top: 3rem;
-        left: 50%; */
         transform: translateX(-50%);
         opacity: 1;
         display: none;
@@ -315,10 +305,6 @@ p{
         background: whitesmoke;
     }
     
-    /* .active{
-        background: whitesmoke;
-    }
-     */
     .menu2-open{
         display: flex;
         flex-direction: column;
@@ -388,47 +374,49 @@ p{
     
     }
 
-/* Initial styles for the image */
+
 
 
 .image-container img {
     width: 100%;
     height: 100%;
-    /* Smooth transition on hover */
+   
 }
 
-/* Enlarged style on hover */
 .png3:hover {
-    transform: scale(1.1); /* Adjust the scale factor as needed */
+    transform: scale(1.1);
     transition: transform 0.3s ease;
-    border: 1px solid #ccc; /* Optional: Add a border for the image container */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  
     cursor: pointer;
     
 }
 .png4:hover {
-    transform: scale(1.1); /* Adjust the scale factor as needed */
+    transform: scale(1.1);
     transition: transform 0.3s ease;
-    border: 1px solid #ccc; /* Optional: Add a border for the image container */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
     cursor: pointer;
 }
 .png5:hover {
-    transform: scale(1.1); /* Adjust the scale factor as needed */
+    transform: scale(1.1); 
     transition: transform 0.3s ease;
-    border: 1px solid #ccc; /* Optional: Add a border for the image container */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
     cursor: pointer;
 }
 .png2:hover {
-    transform: scale(1.1); /* Adjust the scale factor as needed */
+    transform: scale(1.1); 
     transition: transform 0.3s ease;
-    border: 1px solid #ccc; /* Optional: Add a border for the image container */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
     cursor: pointer;
 }
 
-
+a { 
+    color: black;
+    text-decoration: none;
+}
 
 
 
