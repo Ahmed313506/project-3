@@ -9,34 +9,6 @@ document.querySelectorAll(".news").forEach(function(element) {
         this.classList.remove("white");
     });
 });
-
-// document.querySelectorAll(".thirdlist h3").forEach(function(element) {
-//     element.addEventListener("mouseover", function() {
-//         this.style.color="orange";
-//         this.classList.add("text");
-//     });
-// });
-// document.querySelectorAll(".thirdlist h3").forEach(function(element) {
-//     element.addEventListener("mouseout", function() {
-//         this.style.color="white";
-//         this.classList.remove("text");
-//     });
-// });
-
-
-
-// $("a").on("mouseover", function() {
-//     $(this).css("color", "orange");
-//     $(this).addClass("text");
-// });
-
-
-// $("a").on("mouseout", function() {
-//     $(this).css("color", "black");
-//     $(this).removeClass("text");
-// });
-
-
 document.querySelector(".Name").addEventListener("click", function () {
     location.href="index.html";
  
