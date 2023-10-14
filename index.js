@@ -43,20 +43,24 @@ $(".secondlist h3").on("mouseout", function() {
     $(this).removeClass("text");
 });
 
-$(".flex1").on("mouseover", function() {
+$("a").on("mouseover", function() {
     $(this).css("color", "orange");
     $(this).addClass("text");
 });
 
 
-$(".flex1").on("mouseout", function() {
+$("a").on("mouseout", function() {
     $(this).css("color", "black");
     $(this).removeClass("text");
 });
 
 
 document.querySelector(".Name").addEventListener("click", function () {
-    location.reload();
+    location.href="index.html";
+ 
+});
+document.querySelector(".readmore").addEventListener("click", function () {
+    location.href="indexarticle1.html";
  
 });
 
