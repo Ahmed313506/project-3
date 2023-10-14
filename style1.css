@@ -1,0 +1,361 @@
+body{
+    padding: 50px;
+    min-height: fit-content;
+    overflow: scroll;
+}
+
+.menu{
+    display: flex;
+    height: 70px;
+    width: auto;
+    background-color: white;
+    padding-left: 5px;
+}
+
+.Name{
+    height: 100%;
+    font-size: 200%;
+    font-weight: bolder;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    box-shadow: 16px 16px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.buttons{
+    width: 70%;
+    display: flex;
+    gap: 10px;
+}
+
+.buttons>*{
+    flex-basis: 200px;
+    font-family: 'Fira Sans', sans-serif;
+    cursor: pointer;
+    box-shadow: 16px 16px 16px 0px rgba(0, 0, 0, 0.1);
+ 
+}
+.news{
+    padding-top: 22px;
+    text-align: center;
+    font-size: 18px;
+    height: auto;
+    flex-direction: row;
+    justify-content: center; 
+    font-weight: lighter;
+}
+
+.Name2{
+    height: 40px;
+    margin-top: 5px;
+}
+.png{
+    margin-top: 8px;
+
+}
+.Name{
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+    width: 50%;
+}
+.parent{
+display: flex;
+flex-direction: column;
+gap: 15px;
+
+}
+.white{
+
+    background-color: whitesmoke;
+}
+.flex1{
+    
+    padding: 25px;
+    font-size: 2rem;
+    font-weight: bolder;
+    line-height: 50px;
+    font-family: 'Asap Condensed', sans-serif;
+    cursor: pointer;
+    text-align: center;
+}
+.flex2{
+    padding: 15px;
+    padding-top: 30px;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 25px;
+    font-family: 'Fira Sans', sans-serif;
+    display: inline-block;
+}
+.readmore{
+    margin-top: 20px;
+    width: max-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.container2{
+    grid-area: 3/1/4/4;
+    display: flex;
+}
+.container2>*{
+    flex-basis: 400px;
+    flex-wrap: wrap;
+}
+.secondlist{
+   height: 600px;
+   width: 400px;
+   margin-top: 20px;
+   margin-left: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+.container1{
+    display: flex;
+   flex-direction: row;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+
+}
+.container1>*{
+ flex-basis: 50%;
+
+}
+.article{
+    padding: 15px;
+    padding-top: 30px;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 25px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+.text{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+
+.dropdown *{
+    box-sizing: border-box;
+    }
+    .select{
+        background: white;
+        color: black;
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+        height: 20px;
+        cursor: pointer;
+        transition: 0,3s;
+        color: black;
+        box-shadow: 16px 16px 16px 0px rgba(0, 0, 0, 0.1);
+        margin-top: 40px;
+        height: max-content;
+        width: max-content;
+        margin-left: 10px;
+        margin-top: 0px;
+        padding: 26px;
+        flex-wrap: wrap;
+        font-size: 100%;
+        font-weight: bold;
+        font-family: 'Fira Sans', sans-serif;
+
+        
+    }
+    
+    .dropdown{
+        
+  
+       height:0px;
+       width: 0px;
+    
+  
+        
+    }
+    
+ 
+    
+    .select:hover{
+        background: whitesmoke;
+    }
+    
+    .caret{
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid black;
+        transition: 0,3s;
+        margin-left: 10px;
+        
+    }
+    
+    .caret-rotate{
+        transform: rotate(180deg);
+    }
+    
+    .menu2{
+        list-style: none;
+        box-shadow: 16px 16px 16px 0px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        transform: translateX(-50%);
+        opacity: 1;
+        display: none;
+        transition: 0,2s;
+        z-index: 1;
+        width: max-content;
+        overflow: scroll;
+        height: 300px;
+   
+        
+    }
+    
+    .menu2 li{
+       padding: 10px;
+        width: fit-content;
+        border-radius: 5px;
+        cursor: pointer;
+        color: black;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        float: right;
+        
+        
+      
+    }
+    
+    .menu2 li:hover{
+        background: whitesmoke;
+    }
+    
+    .menu2-open{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        opacity: 1;
+     
+
+  
+    }
+
+    @media  (max-width: 1024px) {
+        .container1{ 
+            flex-wrap: wrap;
+         
+        }
+        .flex2{
+            flex-shrink: 1;
+           }
+          
+    }
+    
+    @media  (min-width: 1025px) {
+        body{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        body>*{ 
+    flex-grow: 1;
+        }
+        .container1{
+            justify-content: center;
+        }
+      
+    }
+    @media  (max-width: 900px){
+        body{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .menu{
+            flex-direction: column;
+            width: 100%;
+    
+        }
+        .buttons{
+            width: 100%;
+        }
+        .Name{
+            margin-bottom: 100px;
+            flex-shrink: 0px;
+            
+        }
+        .container1{
+            margin-top: 150px;
+           
+            
+        }
+       .container1>*{
+        justify-content: center;
+       }
+       .select{
+        padding: 32px;
+       }
+    
+    
+    }
+
+
+
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+   
+}
+
+.png3:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  
+    cursor: pointer;
+    
+}
+.png4:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    cursor: pointer;
+}
+.png5:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    cursor: pointer;
+}
+.png2:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    cursor: pointer;
+}
+
+a { 
+    color: black;
+    text-decoration: none;
+    
+}
+
+
+
+
+
+
+
