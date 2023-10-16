@@ -59,6 +59,10 @@ document.querySelector(".Name").addEventListener("click", function () {
     location.href="index.html";
  
 });
+document.querySelector(".first").addEventListener("click", function () {
+    location.href="index.html";
+ 
+});
 document.querySelector(".readmore").addEventListener("click", function () {
     location.href="indexarticle1.html";
  
