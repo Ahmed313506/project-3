@@ -13,6 +13,10 @@ document.querySelector(".Name").addEventListener("click", function () {
     location.href="index.html";
  
 });
+document.querySelector(".first").addEventListener("click", function () {
+    location.href="index.html";
+ 
+});
 
 const dropdowns= document.querySelectorAll('.dropdown');
 
