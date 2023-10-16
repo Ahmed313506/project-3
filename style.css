@@ -1,7 +1,7 @@
 body{
-    padding: 50px;
-    min-height: fit-content;
-    overflow: scroll;
+    padding: 30px;
+    min-height: max-content;
+   
 }
 
 .menu{
@@ -127,9 +127,9 @@ body{
 .container1{
     display: flex;
    flex-direction: row;
-    height: max-content;
+    height: 700px;
     margin-top: 15px;
-
+    gap: 10px;
 }
 .bo{
     width: 350px;
@@ -241,7 +241,7 @@ p{
     
     .dropdown{
         
-  
+
        height:0px;
        width: 0px;
     
@@ -282,8 +282,12 @@ p{
         width: max-content;
         overflow: scroll;
         height: 300px;
-   
-        
+        padding-left: 25px;
+        margin-left: 80px;
+      
+    }
+    .menu2>*{
+        text-align: center;
     }
     
     .menu2 li{
@@ -324,6 +328,7 @@ p{
         .flex2{
             flex-shrink: 1;
            }
+        
           
     }
     
@@ -340,6 +345,9 @@ p{
             justify-content: center;
         }
       
+        footer{
+            flex-wrap: wrap;
+        }
     }
     @media  (max-width: 900px){
         body{
@@ -370,7 +378,11 @@ p{
        .select{
         padding: 32px;
        }
-    
+        footer{
+        flex-wrap: wrap;
+        float: inline-end;
+   
+    }
     
     }
 
@@ -418,7 +430,41 @@ a {
     text-decoration: none;
 }
 
-
+footer{
+    height: max-content;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    bottom: 0;
+}
+.footer{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-top: 50px;
+}
+.footer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+   
+}
+.footer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+   
+}
 
 
 
