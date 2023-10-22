@@ -9,12 +9,31 @@ document.querySelectorAll(".news").forEach(function(element) {
         this.classList.remove("white");
     });
 });
+
+// document.querySelector(".Gesundheit").addEventListener("click", function () {
+//     location.href="indexGesundheit.html";
+ 
+// });
+
 document.querySelector(".Name").addEventListener("click", function () {
     location.href="index.html";
  
 });
 document.querySelector(".first").addEventListener("click", function () {
     location.href="index.html";
+ 
+});
+document.querySelector(".second").addEventListener("click", function () {
+    location.href="indexNew.html";
+ 
+});
+document.querySelector(".third").addEventListener("click", function () {
+    location.href="indexPopular.html";
+ 
+});
+
+document.querySelector(".fourth").addEventListener("click", function () {
+    location.href="indexTrending.html";
  
 });
 
